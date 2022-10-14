@@ -4,52 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
     tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="202dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Correo"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="203dp"
-        android:layout_height="37dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="80dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="206dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="22dp"
-        android:text="Contraseña"
-        app:layout_constraintBottom_toTopOf="@+id/et_clave"
-        tools:layout_editor_absoluteX="102dp" />
-
-    <EditText
-        android:id="@+id/et_clave"
-        android:layout_width="203dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="200dp" />
 
     <LinearLayout
         android:layout_width="341dp"
         android:layout_height="114dp"
         android:layout_marginTop="14dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/et_clave"
         tools:layout_editor_absoluteX="35dp">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="202dp"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Correo" />
+
+        <EditText
+            android:id="@+id/et_clave"
+            android:layout_width="203dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="206dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="22dp"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="203dp"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
 
         <ImageButton
             android:id="@+id/bt_register"
